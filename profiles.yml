@@ -1,0 +1,14 @@
+aoc24:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'aoc24.duckdb'
+      threads: 24
+      extensions:
+        - httpfs
+      secrets:
+        - name: aoc_cookie
+          type: http
+          scope: 'https://adventofcode.com'
+          extra_http_headers: "map { 'Cookie': '{{ env_var('AOC_COOKIE') }}' }"

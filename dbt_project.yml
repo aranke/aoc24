@@ -1,0 +1,5 @@
+name: aoc24
+profile: aoc24
+
+models:
+  +materialized: table

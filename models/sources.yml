@@ -1,0 +1,16 @@
+version: 2
+sources:
+  - name: input
+    tables:
+      - name: day1
+        config:
+          external_location: "read_csv('https://adventofcode.com/2024/day/1/input', delim=' ', header=false)"
+      - name: day2
+        config:
+          external_location: "read_csv('https://adventofcode.com/2024/day/2/input', header=false)"
+      - name: day3
+        config:
+          external_location: "read_text('https://adventofcode.com/2024/day/3/input')"
+      - name: day4
+        config:
+          external_location: "read_csv('https://adventofcode.com/2024/day/4/input', header=false)"
