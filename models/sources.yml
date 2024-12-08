@@ -14,3 +14,6 @@ sources:
       - name: day4
         config:
           external_location: "read_csv('https://adventofcode.com/2024/day/4/input', header=false)"
+      - name: day5
+        config:
+          external_location: "read_csv('https://adventofcode.com/2024/day/5/input', delim='|', null_padding=true, header=false)"
